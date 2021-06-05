@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             // Call `classifyText` in a coroutine
             lifecycleScope.launch(Dispatchers.IO) {
                 // Classify the text input
-                val textSelection = manager.textClassifier.classifyText(
+                val textClassification = manager.textClassifier.classifyText(
                     TextClassification.Request.Builder(inputText, 0, inputText.length)
                         .setDefaultLocales(LocaleListCompat.getDefault())
                         .build()
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 var strConfidences = ""
                 for (type in types) {
                     strConfidences += "${if (type.isNotBlank()) type else "unknown"}: ${
-                        textSelection.getConfidenceScore(
+                        textClassification.getConfidenceScore(
                             type
                         )
                     }\n"
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                     findViewById<RecyclerView>(R.id.recycler_view_action)?.apply {
                         layoutManager =
                             LinearLayoutManager(applicationContext)
-                        adapter = RemoteActionListAdapter(applicationContext, textSelection.actions)
+                        adapter = RemoteActionListAdapter(applicationContext, textClassification.actions)
                     }
                     findViewById<TextView>(R.id.text_confidence).text = strConfidences
                 }
