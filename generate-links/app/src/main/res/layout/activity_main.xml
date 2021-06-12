@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input email, phone, address, date...">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sherlock Holmes. He lives in 221b Baker Street. You can reach out to him via email in sherlock@holmes.com or via phone in +447975777666. His website is sherlock.co.uk. He will be meeting you today at 13:30 as he is currently flying BA98." />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_extract_entities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extract Entities" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entities"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/text_entities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="The extracted entities..." />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
