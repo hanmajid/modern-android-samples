@@ -1,0 +1,2 @@
+rootProject.name = "Calender Provider"
+include ':app'
