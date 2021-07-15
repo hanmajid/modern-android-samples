@@ -1,12 +1,17 @@
 package com.hanmajid.yggr.android.calenderprovider
 
+import android.content.Context
+import android.content.Intent
+import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class CalendarItemAdapter() : RecyclerView.Adapter<CalendarItemAdapter.ViewHolder>() {
+class CalendarItemAdapter(private val context: Context) :
+    RecyclerView.Adapter<CalendarItemAdapter.ViewHolder>() {
 
     var data: MutableList<CalendarItem> = mutableListOf()
 
@@ -21,6 +26,7 @@ class CalendarItemAdapter() : RecyclerView.Adapter<CalendarItemAdapter.ViewHolde
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val itemContainer: LinearLayoutCompat = view.findViewById(R.id.item_container)
         val viewColor: View = view.findViewById(R.id.view_color)
         val textDisplayName: TextView = view.findViewById(R.id.text_display_name)
         val textAccountName: TextView = view.findViewById(R.id.text_account_name)
@@ -37,6 +43,12 @@ class CalendarItemAdapter() : RecyclerView.Adapter<CalendarItemAdapter.ViewHolde
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val datum = data[position]
+        holder.itemContainer.setOnClickListener {
+            val intent = Intent(context, CalendarActivity::class.java).apply {
+                putExtra(EXTRA_MESSAGE, datum.id.toString())
+            }
+            context.startActivity(intent)
+        }
         holder.viewColor.setBackgroundColor(datum.color)
         holder.textDisplayName.text = datum.displayName
         holder.textAccountName.text = datum.accountName

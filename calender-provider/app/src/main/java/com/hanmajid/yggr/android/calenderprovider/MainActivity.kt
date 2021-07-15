@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Setup RecyclerView adapter
-        calendarItemAdapter = CalendarItemAdapter()
+        calendarItemAdapter = CalendarItemAdapter(this)
         findViewById<RecyclerView>(R.id.recycler_view_calendars).let {
             it.layoutManager = LinearLayoutManager(this)
             it.adapter = calendarItemAdapter
