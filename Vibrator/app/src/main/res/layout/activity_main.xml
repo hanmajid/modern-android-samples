@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Has Vibrator?" />
+
+            <TextView
+                android:id="@+id/text_has_vibrator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="TRUE" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Has Amplitude Control?" />
+
+            <TextView
+                android:id="@+id/text_has_amplitude_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="TRUE" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Constant Vibration" />
+
+        <Button
+            android:id="@+id/button_vibrate_constant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate!" />
+
+        <Button
+            android:id="@+id/button_vibrate_constant_audio_attribute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate AudioAttribute" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Pattern Vibration" />
+
+        <Button
+            android:id="@+id/button_vibrate_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate!" />
+
+        <Button
+            android:id="@+id/button_vibrate_pattern_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate Repeat" />
+
+        <Button
+            android:id="@+id/button_vibrate_pattern_audio_attribute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate AudioAttribute" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Effect Vibration" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.1. One shot vibration" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_one_shot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate!" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_one_shot_min_amplitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate Min Amplitude (1)" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_one_shot_mid_amplitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate Mid Amplitude (127)" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_one_shot_max_amplitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate Max Amplitude (255)" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.2. Predefined vibration" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_predefined_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tick" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_predefined_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_predefined_double_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double Click" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_predefined_heavy_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heavy Click" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.3. Waveform vibration" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_waveform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate!" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_waveform_amplitudes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate Amplitudes" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.4. Composition vibration" />
+
+        <Button
+            android:id="@+id/button_vibrate_effect_composition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate!" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
