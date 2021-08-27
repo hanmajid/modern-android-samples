@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thermal Status" />
+
+        <TextView
+            android:id="@+id/text_thermal_status"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="None" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thermal Headroom" />
+
+        <TextView
+            android:id="@+id/text_thermal_headroom"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="0.0" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Power Save Mode?" />
+
+        <TextView
+            android:id="@+id/text_is_power_save_mode"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="TRUE" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Power in Saver Mode" />
+
+        <TextView
+            android:id="@+id/text_location_power_save_mode"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="No Change" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Idle Mode?" />
+
+        <TextView
+            android:id="@+id/text_is_device_idle_mode"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="TRUE" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Ignoring Battery Optimizations?" />
+
+        <TextView
+            android:id="@+id/text_is_ignoring_battery_optimizations"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="TRUE" />
+
+        <Button
+            android:id="@+id/button_request_allow_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Ignore Battery Optimization" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Interactive?" />
+
+        <TextView
+            android:id="@+id/text_is_interactive"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="TRUE" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Rebooting Userspace Supported?" />
+
+        <TextView
+            android:id="@+id/text_is_rebooting_userspace_supported"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="TRUE" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Sustained Performance Mode Supported?" />
+
+        <TextView
+            android:id="@+id/text_is_sustained_performance_mode_supported"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="TRUE" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Locks" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to test Wake Locks:\n1. Set your device so that it turns off the screen after 15 seconds of inactivity.\n2. Click one of the button below and don't interact with the screen again" />
+
+        <Button
+            android:id="@+id/button_wake_lock_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Lock Full (Twice)" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The screen will stay on for 30 seconds, turns off immediately, and turns on after 5 seconds." />
+
+        <Button
+            android:id="@+id/button_wake_lock_screen_dim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Lock Screen Dim (Twice)" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The screen will be dimmed after 15 seconds, turns off after the next 15 seconds, and turns on after 5 seconds." />
+
+        <Button
+            android:id="@+id/button_wake_lock_screen_bright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Lock Screen Bright (Twice)" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The screen will stay on for 30 seconds, turns off immediately, and turns on after 5 seconds." />
+
+        <Button
+            android:id="@+id/button_wake_lock_partial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Lock Partial (30 seconds)" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="The screen will NOT stay on for 30 seconds (only CPU still on)." />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Lock Proximity Screen Off" />
+
+        <Button
+            android:id="@+id/button_wake_lock_proximity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Lock Proximity (30 seconds)" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="The screen will turns off when an object is nearby proximity sensor." />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
