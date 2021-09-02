@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image" />
+
+    <ImageView
+        android:id="@+id/image_source"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Palette source image"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_light_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_light_vibrant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Vibrant" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_vibrant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrant" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_dark_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_dark_vibrant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Vibrant" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_light_muted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_light_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Muted" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_muted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muted" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_dark_muted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_dark_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Muted" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
