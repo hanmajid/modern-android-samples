@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "com.hanmajid.yggr.androidx.datastore.typed";
+option java_multiple_files = true;
+
+message UserPreferences {
+  int32 example_int = 1;
+  string example_string = 2;
+  bool example_bool = 3;
+}
