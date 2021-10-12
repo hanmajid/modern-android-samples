@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.hanmajid.yggr.androidx.security.crypto.encryptedfile"
-        minSdk 16
+        minSdk 23 // Set this to 23 (minimum requirement for security dependency)
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -41,6 +41,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    // Add activity dependency for launching an intent
     implementation("androidx.activity:activity-ktx:1.3.1")
-    implementation("androidx.security:security-crypto:1.0.0")
+    // Add security dependency
+    implementation("androidx.security:security-crypto:1.1.0-alpha03")
 }
