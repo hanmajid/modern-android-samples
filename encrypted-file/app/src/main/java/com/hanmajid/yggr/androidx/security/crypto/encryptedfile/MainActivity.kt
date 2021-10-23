@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.result.ActivityResultLauncher
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private val unencryptedImageFilename = "unencrypted_saved_image.jpeg"
     private lateinit var masterKey: MasterKey
     private lateinit var pickImageLauncher: ActivityResultLauncher<String>
+    private var lastSavedFile: File? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -120,6 +122,11 @@ class MainActivity : AppCompatActivity() {
      */
     private fun showSavedImage() {
         val file = File(filesDir, imageFilename)
+        try {
+            throw Exception("Hehe")
+        } catch (e: Exception) {
+            Log.e("TAG", e.message, e)
+        }
         val unencryptedFile = File(filesDir, unencryptedImageFilename)
 
         if (file.exists() && unencryptedFile.exists()) {
@@ -158,6 +165,7 @@ class MainActivity : AppCompatActivity() {
         val imageInputStream = contentResolver.openInputStream(imageUri)
 
         writeFile(openFileOutput(unencryptedImageFilename, Context.MODE_PRIVATE), imageInputStream)
+        lastSavedFile = File(filesDir, unencryptedImageFilename)
     }
 
     /**
