@@ -49,7 +49,9 @@ class CalendarItemAdapter(private val context: Context) :
             }
             context.startActivity(intent)
         }
-        holder.viewColor.setBackgroundColor(datum.color)
+        datum.color?.let {
+            holder.viewColor.setBackgroundColor(it)
+        }
         holder.textDisplayName.text = datum.displayName
         holder.textAccountName.text = datum.accountName
         holder.textAccountType.text = "(${datum.accountType})"
