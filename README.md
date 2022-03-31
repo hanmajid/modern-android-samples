@@ -1,8 +1,15 @@
-# yggr-medium-source-code
+# modern-android-samples
 
-## About
+This is the collection of source code for [yggr.medium.com](https://yggr.medium.com).
 
-This is the collection of source code for yggr.medium.com:
+## Table of Content
+
+| | |
+| :-: | :-: |
+| RoleManager ([Github](/role-manager)) | |
+| <img src="role-manager/screenshots/android-role-manager.png" /> | |
+
+## Old Table of Content (TODO Migrate)
 
 1. [Generate Intents based on Input Text with classifyText API](https://yggr.medium.com/generate-intents-based-on-input-text-with-classifytext-api-6ebdc94c00be)
     - Source code: [classify-text](https://github.com/hanmajid/yggr-medium-source-code/tree/master/classify-text)
