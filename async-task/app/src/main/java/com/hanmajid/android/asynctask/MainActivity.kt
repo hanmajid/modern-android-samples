@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.hanmajid.android.asynctask
 
 import android.app.Activity
@@ -14,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import java.lang.ref.WeakReference
 
-@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
     private val viewModel: MainViewModel by viewModels()
     private lateinit var broadcastReceiver: DownloadFilesBroadcastReceiver
@@ -36,12 +37,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.button_start).setOnClickListener {
-            viewModel.asyncTask?.cancel(true)
-            viewModel.asyncTask = DownloadFilesTask(this)
-            viewModel.asyncTask?.execute("")
+            viewModel.downloadFilesTask?.cancel(true)
+            viewModel.downloadFilesTask = DownloadFilesTask(this)
+            viewModel.downloadFilesTask?.execute("")
         }
         findViewById<Button>(R.id.button_cancel).setOnClickListener {
-            viewModel.asyncTask?.cancel(true)
+            viewModel.downloadFilesTask?.cancel(true)
         }
     }
 
