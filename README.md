@@ -6,7 +6,7 @@ This is the collection of source code for [yggr.medium.com](https://yggr.medium.
 
 | | |
 | :-: | :-: |
-| RoleManager ([Github](/role-manager)) ([Tutorial](https://yggr.medium.com/exploring-android-rolemanager-eac84c611a0b)) | Handling AsyncTask during Screen Rotation ([Github](/async-task)) |
+| RoleManager ([Github](/role-manager)) ([Tutorial](https://yggr.medium.com/exploring-android-rolemanager-eac84c611a0b)) | Handling AsyncTask during Screen Rotation ([Github](/async-task)) ([Tutorial](https://yggr.medium.com/handling-asynctask-during-screen-rotation-3eca540af777)) |
 | <img src="role-manager/screenshots/android-role-manager.png" /> | <img src="async-task/screenshots/async-task.png" /> |
 
 ## Old Table of Content (TODO Migrate)
