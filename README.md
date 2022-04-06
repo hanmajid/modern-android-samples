@@ -6,7 +6,9 @@ This is the collection of source code for [yggr.medium.com](https://yggr.medium.
 
 | | |
 | :-: | :-: |
-| RoleManager ([Github](/role-manager)) ([Tutorial](https://yggr.medium.com/exploring-android-rolemanager-eac84c611a0b)) | Handling AsyncTask during Screen Rotation ([Github](/async-task)) ([Tutorial](https://yggr.medium.com/handling-asynctask-during-screen-rotation-3eca540af777)) |
+| Exploring Android Vibrator API ([Github](/Vibrator)) ([Tutorial](https://yggr.medium.com/exploring-android-vibrator-api-71741c553429)) | |
+| <img src="Vibrator/screenshots/vibrator.png" /> | |
+| Exploring Android RoleManager ([Github](/role-manager)) ([Tutorial](https://yggr.medium.com/exploring-android-rolemanager-eac84c611a0b)) | Handling AsyncTask during Screen Rotation ([Github](/async-task)) ([Tutorial](https://yggr.medium.com/handling-asynctask-during-screen-rotation-3eca540af777)) |
 | <img src="role-manager/screenshots/android-role-manager.png" /> | <img src="async-task/screenshots/async-task.png" /> |
 
 ## Old Table of Content (TODO Migrate)
@@ -23,7 +25,5 @@ This is the collection of source code for [yggr.medium.com](https://yggr.medium.
     - Source code: [android-tips-1](https://github.com/hanmajid/yggr-medium-source-code/tree/master/android-tips-1)
 6. [Android Calendar Provider Pt. 2: Listing Events](https://yggr.medium.com/android-calendar-provider-pt-2-listing-events-2b1c7ca72535)
     - Source code: [calender-provider](https://github.com/hanmajid/yggr-medium-source-code/tree/master/calender-provider)
-7. [Exploring Android Vibrator API](https://yggr.medium.com/exploring-android-vibrator-api-71741c553429)
-    - Source code: [Vibrator](https://github.com/hanmajid/yggr-medium-source-code/tree/master/Vibrator)
-8. [Exploring Android PowerManager API](https://yggr.medium.com/exploring-android-powermanager-api-72981adbafb1)
+7. [Exploring Android PowerManager API](https://yggr.medium.com/exploring-android-powermanager-api-72981adbafb1)
     - Source code: [power-manager](https://github.com/hanmajid/yggr-medium-source-code/tree/master/power-manager)
