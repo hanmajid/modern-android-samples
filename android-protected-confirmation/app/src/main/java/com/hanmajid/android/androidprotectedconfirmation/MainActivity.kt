@@ -28,12 +28,17 @@ data class TransactionData(
 )
 
 class MainActivity : AppCompatActivity() {
+    // Attestation challenge that should be provided by relying party.
     private val attestationChallenge = "CHALLENGE"
+
+    // Extra data that will be confirmed by the user.
     private val extraData = TransactionData(
         sender = "You",
         amount = 200,
         recipient = "Your Mom"
     )
+
+    // PrivateKey for signing data.
     private var privateKey: KeyStore.PrivateKeyEntry? = null
 
     @RequiresApi(Build.VERSION_CODES.P)
@@ -41,15 +46,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Initialize PrivateKey.
         privateKey = createOrGetPrivateKey(attestationChallenge)
 
+        // Setup button.
         findViewById<Button>(R.id.button_send_money).setOnClickListener {
             showAndroidProtectedConfirmationPrompt(privateKey, extraData)
         }
 
+        // Init UI.
         initUI()
     }
 
+    /**
+     * Initialize UI elements.
+     */
     private fun initUI() {
         findViewById<TextView>(R.id.text_attestation_challenge).text = attestationChallenge
         findViewById<TextView>(R.id.text_attestation_certificate).text =
@@ -89,6 +100,9 @@ class MainActivity : AppCompatActivity() {
         return ks.getEntry(KEYSTORE_ALIAS, null) as? KeyStore.PrivateKeyEntry
     }
 
+    /**
+     * The callback for Android Protected Confirmation.
+     */
     @RequiresApi(Build.VERSION_CODES.P)
     class MyConfirmationCallback(
         private val privateKey: KeyStore.PrivateKeyEntry?,
@@ -129,6 +143,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Shows Android Protected Confirmation with the given [extraData].
+     *
+     * If it is confirmed, than the data will be signed with the given [privateKey].
+     */
     @RequiresApi(Build.VERSION_CODES.P)
     private fun showAndroidProtectedConfirmationPrompt(
         privateKey: KeyStore.PrivateKeyEntry?,
