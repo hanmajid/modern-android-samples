@@ -10,8 +10,8 @@ This is the collection of source code for [yggr.medium.com](https://yggr.medium.
 | <img src="Vibrator/screenshots/vibrator.png" /> | <img src="power-manager/screenshots/power-manager.png" /> |
 | Exploring Android RoleManager ([Github](/role-manager)) ([Tutorial](https://yggr.medium.com/exploring-android-rolemanager-eac84c611a0b)) | Handling AsyncTask during Screen Rotation ([Github](/async-task)) ([Tutorial](https://yggr.medium.com/handling-asynctask-during-screen-rotation-3eca540af777)) |
 | <img src="role-manager/screenshots/android-role-manager.png" /> | <img src="async-task/screenshots/async-task.png" /> |
-| Exploring Android Protected Confirmation ([Github](/android-protected-confirmation)) ([Tutorial](https://yggr.medium.com/exploring-android-protected-confirmation-79b4e5b53af6)) | |
-| <img src="android-protected-confirmation/screenshots/android-protected-confirmation.png" /> | |
+| Exploring Android Protected Confirmation ([Github](/android-protected-confirmation)) ([Tutorial](https://yggr.medium.com/exploring-android-protected-confirmation-79b4e5b53af6)) | How to Use Material Container Transform with RecyclerView + Navigation + DataBinding ([Github](/material-list-container-transform)) ([Tutorial](https://yggr.medium.com/how-to-use-material-container-transform-with-recyclerview-navigation-databinding-ee6c13ce26ea)) |
+| <img src="android-protected-confirmation/screenshots/android-protected-confirmation.png" /> | <img src="material-list-container-transform/screenshots/material-list-container-transform.png" /> |
 
 ## Old Table of Content (TODO Migrate)
 
