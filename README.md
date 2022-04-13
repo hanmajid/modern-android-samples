@@ -6,7 +6,7 @@ This is the collection of source code for [yggr.medium.com](https://yggr.medium.
 
 | | |
 | :-: | :-: |
-| Generate Intents based on Input Text with classifyText API ([Github](/classify-text)) ([Tutorial](https://yggr.medium.com/generate-intents-based-on-input-text-with-classifytext-api-6ebdc94c00be)) | Extracting Entities with generateLinks API ([Github](/generate-links)) ([Tutorial](https://github.com/hanmajid/yggr-medium-source-code/tree/master/generate-links)) |
+| Generate Intents based on Input Text with classifyText API ([Github](/classify-text)) ([Tutorial](https://yggr.medium.com/generate-intents-based-on-input-text-with-classifytext-api-6ebdc94c00be)) | Extracting Entities with generateLinks API ([Github](/generate-links)) ([Tutorial](https://yggr.medium.com/extracting-entities-with-generatelinks-api-349042a6e5b0)) |
 | <img src="classify-text/screenshots/classify-text.jpg" /> | <img src="generate-links/screenshots/generate-links.jpg" /> |
 | Exploring Android Vibrator API ([Github](/Vibrator)) ([Tutorial](https://yggr.medium.com/exploring-android-vibrator-api-71741c553429)) | Exploring Android PowerManager API ([Github](/power-manager)) ([Tutorial](https://yggr.medium.com/exploring-android-powermanager-api-72981adbafb1)) |
 | <img src="Vibrator/screenshots/vibrator.png" /> | <img src="power-manager/screenshots/power-manager.png" /> |
