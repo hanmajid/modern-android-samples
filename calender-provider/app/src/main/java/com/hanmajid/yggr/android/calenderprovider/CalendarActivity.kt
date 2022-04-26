@@ -1,7 +1,6 @@
 package com.hanmajid.yggr.android.calenderprovider
 
 import android.os.Bundle
-import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.provider.CalendarContract
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.database.getIntOrNull
@@ -40,13 +39,14 @@ class CalendarActivity : AppCompatActivity() {
         private const val PROJECTION_RRULE_INDEX = 9
         private const val PROJECTION_DISPLAY_COLOR_INDEX = 10
         private const val PROJECTION_VISIBLE_INDEX = 11
+        const val EXTRA_CALENDAR_ID = "com.hanmajid.yggr.android.calenderprovider.calendaractivity.extra"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)
 
-        val calendarId = intent.getStringExtra(EXTRA_MESSAGE)
+        val calendarId = intent.getStringExtra(EXTRA_CALENDAR_ID)
 
         // Setup RecyclerView adapter
         eventItemAdapter = EventItemAdapter()

@@ -2,7 +2,6 @@ package com.hanmajid.yggr.android.calenderprovider
 
 import android.content.Context
 import android.content.Intent
-import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -45,7 +44,7 @@ class CalendarItemAdapter(private val context: Context) :
         val datum = data[position]
         holder.itemContainer.setOnClickListener {
             val intent = Intent(context, CalendarActivity::class.java).apply {
-                putExtra(EXTRA_MESSAGE, datum.id.toString())
+                putExtra(CalendarActivity.EXTRA_CALENDAR_ID, datum.id.toString())
             }
             context.startActivity(intent)
         }
